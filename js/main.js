@@ -119,27 +119,40 @@ function validLive(value) {
             if (rgx.checkName(event.target.value)) {
                 event.target.parentElement.classList.add('block-ipt--true');
                 event.target.parentElement.classList.remove('block-ipt--false');
+                event.target.classList.add('block-ipt__input--true');
+                event.target.classList.remove('block-ipt__input--false');
+
             } else {
                 event.target.parentElement.classList.add('block-ipt--false');
                 event.target.parentElement.classList.remove('block-ipt--true');
+                event.target.classList.remove('block-ipt__input--true');
+                event.target.classList.add('block-ipt__input--false');
             }
         }
         if (value == 'email') {
             if (rgx.checkEmail(event.target.value)) {
                 event.target.parentElement.classList.add('block-ipt--true');
                 event.target.parentElement.classList.remove('block-ipt--false');
+                event.target.classList.add('block-ipt__input--true');
+                event.target.classList.remove('block-ipt__input--false');
             } else {
                 event.target.parentElement.classList.add('block-ipt--false');
                 event.target.parentElement.classList.remove('block-ipt--true');
+                event.target.classList.remove('block-ipt__input--true');
+                event.target.classList.add('block-ipt__input--false');
             }
         }
         if (value == 'password') {
             if (rgx.checkPassword(event.target.value)) {
                 event.target.parentElement.classList.add('block-ipt--true');
                 event.target.parentElement.classList.remove('block-ipt--false');
+                event.target.classList.add('block-ipt__input--true');
+                event.target.classList.remove('block-ipt__input--false');
             } else {
                 event.target.parentElement.classList.add('block-ipt--false');
                 event.target.parentElement.classList.remove('block-ipt--true');
+                event.target.classList.remove('block-ipt__input--true');
+                event.target.classList.add('block-ipt__input--false');
             }
         }
     }
