@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Profile local storage</title>
+    
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="sign-up ">
+            <form action="" class="sign-up__form" name="sign-up__form">
+                <div class="sign-up__title-wrapper title">
+                    <h1 class="sign-up__title title__name">Please sign up</h1>
+                </div>
+                <div class="sign-up__ipt-wrapper block-ipt ">
+                    <input type="text" name="firstName" class="sign-up__ipt block-ipt__input sign-up__first-name" oninput="placeholderUp(),validLive('name')"
+                        autocomplete="off">
+                    <span class="sign-up__placeholder placeholder">First name</span>
+                </div>
+                <div class="sign-up__ipt-wrapper block-ipt ">
+                    <input type="text" name="surname" class="sign-up__ipt block-ipt__input sign-up__last-name" oninput="placeholderUp(),validLive('name')" 
+                        autocomplete="off">
+                    <span class="sign-up__placeholder placeholder">Last name</span>
+                </div>
+                <div class="sign-up__ipt-wrapper block-ipt">
+                    <input type="email" name="email" class="sign-up__ipt block-ipt__input sign-up__email" oninput="placeholderUp(),validLive('email')" 
+                        autocomplete="off">
+                    <span class="sign-up__placeholder placeholder">Email address</span>
+                    <div class="sign-up__warning warning hide">This email already exist</div>
+                </div>
+                <div class="sign-up__ipt-wrapper block-ipt">
+                    <input type="password" name="firstName" class="sign-up__ipt block-ipt__input sign-up__password" autocomplete="off" 
+                        oninput="placeholderUp(),validLive('password')">
+                    <span class="sign-up__placeholder placeholder">Password</span>
+                </div>
+
+                <div class="sign-up__ipt-wrapper block-ipt block-ipt--btn">
+                    <input type="button" name="btn-sign-up" class="sign-up__btn block-ipt__btn btn-sign-up "
+                        value="Sign Up">
+                </div>
+            </form>
+            <a href="#" class="sign-up__link link">Sign In now</a>
+        </div>
+
+        <div class="sign-in hide">
+            <form action="" class="sign-in__form">
+                <div class="sign-in__title-wrapper title">
+                    <h1 class="sign-in__title title__name">Please sign in</h1>
+                </div>
+                <div class="sign-in__ipt-wrapper block-ipt">
+                    <input type="email" name="email" class="sign-in__ipt sign-in__ipt--email block-ipt__input" oninput="placeholderUp()"
+                        autocomplete="off">
+                    <span class="sign-in__placeholder placeholder">Email address</span>
+                </div>
+                <div class="sign-in__ipt-wrapper block-ipt">
+                    <input type="password" name="firstName" class="sign-in__ipt sign-in__ipt--password block-ipt__input" autocomplete="off"
+                        oninput="placeholderUp()">
+                    <span class="sign-in__placeholder placeholder">Password</span>
+                    <div class="sign-in__warning warning hide">Incorrect email or password</div>
+                </div>
+
+                <div class="sign-in__ipt-wrapper block-ipt block-ipt--btn">
+                    <input type="button" name="btn-sign-in" class="sign-in__btn block-ipt__btn btn-sign-in "
+                        value="Sign In">
+                </div>
+            </form>
+            <a href="#" class="sign-in__link link">Sign Up now</a>
+
+        </div>
+
+        <div class="profile hide" >
+            <div class="profile__img-wrapper">
+                <img src="img/person.svg" alt="Person" class="profile__img">
+            </div>
+            <div class="profile__ifo-block">
+                <h1 class="profile__ifo-name">Andriy Nykolyn</h1>
+                <p class="profile__ifo-email">someEmail@gmail.com</p>
+                <p class="profile__ifo-position">Designer & Web Developing</p>
+            </div>
+            <div class="profile__ipt-wrapper block-ipt block-ipt--btn">
+                <input type="button" name="btn-sign-out-profile" class="profile__btn block-ipt__btn  "
+                    value="Sign Out">
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- <script src="js/regex.js" type="module"></script> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

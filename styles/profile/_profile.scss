@@ -1,0 +1,62 @@
+.profile {
+    margin-top: 5em;
+    width: 450px;
+    background-color: $profile-bg;
+    border-radius: 0.25em;
+    &__img-wrapper {
+    }
+
+    &__img {
+        display: block;
+        width: 140px;
+        height: 140px;
+        margin: 2em auto 3em;
+    }
+
+    &__ifo-block {
+        padding-bottom: 1.8em;
+        margin-bottom: 3.6em;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: '';
+            width: 80px;
+            height: 2px;
+            background-color: rgb(196, 193, 193);
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%);
+        }
+    }
+
+    &__ifo-name {
+        text-align: center;
+        font-size: 1.7rem;
+        letter-spacing: 0.045em;
+    }
+
+    &__ifo-email {
+    }
+    p {
+        display: block;
+        margin-top: 0.7em;
+        color: $profile-ifo-clr;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .profile__ifo-position {
+        margin-top: 0.1em;
+    }
+
+    &__ipt-wrapper {
+    }
+
+    &__btn {
+        color: $btn-color;
+        background-color: $signIn-btn-bg;
+        &:hover{
+            background-color: $signIn-btn-bg-hover;
+        }
+    }
+}

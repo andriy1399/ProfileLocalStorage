@@ -1,0 +1,28 @@
+.sign-in {
+    margin: 130px 0;
+    width: 450px;
+    &__form {
+        width: 100%;
+    }
+
+    &__btn {
+        color: $btn-color;
+        background-color: $signIn-btn-bg;
+        &:hover {
+            background-color: $signIn-btn-bg-hover;
+        }
+    }
+    &__warning {
+        width: 47%;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .warning {
+        font-size: 0.85rem;
+        width: 60%;
+        bottom: -2.5em;
+    }
+}
